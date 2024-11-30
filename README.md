@@ -1,4 +1,4 @@
-# gulp-dev_static_flocss_PCtoSP
+# gulp_webpack_static_FLOCSS_PCtoSP
 
 ## 動作が確認できている環境
 - Nodeバージョン v14.16.0
@@ -14,11 +14,11 @@
 ## 作業ディレクトリ
 - sassの記述はsrcフォルダの中で行う
 - 画像はsrcフォルダのimagesの中に格納する
-- コンパイルされたCSSと圧縮された画像はdistフォルダの中に出力される
+- jsの記述はsrcの中で行う（ファイル分割してentries/script.jsで読み込む）
+- コンパイルされたCSS、JS、圧縮された画像はdistフォルダの中に出力される
 - htmlはdist直下のhtmlファイルに直接記述する
-- jsはdist直下のjsファイルに直接記述する（圧縮なし）
 
 ## 備考
 - CSS設計はFLOCSS(https://github.com/hiloki/flocss )を採用
 - PCファースト
-- rem記述を前提# gulp_webpack_static_FLOCSS_PCtoSP-
+- rem記述を前提
